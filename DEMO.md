@@ -1,5 +1,7 @@
 ### Publish the data app to Semaphor
 
+`npm i semaphor-cli`
+
 `semaphor init`
 
 - Enter your app name: custom-app-vite
