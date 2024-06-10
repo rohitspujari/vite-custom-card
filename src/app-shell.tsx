@@ -213,7 +213,7 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
         {/* Static sidebar for desktop */}
         <div className="hidden lg:fixed lg:inset-y-0 lg:z-50 lg:flex lg:w-72 lg:flex-col">
           {/* Sidebar component, swap this element with another sidebar if you like */}
-          <div className="flex grow flex-col gap-y-5 overflow-y-auto bg-gray-900 px-6 pb-4">
+          <div className="flex grow flex-col gap-y-5 overflow-y-auto bg-muted/20 border-r px-6 pb-4">
             <div className="flex h-16 shrink-0 items-center gap-3">
               {/* <img
                 className="h-8 w-auto"
@@ -295,7 +295,7 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
         </div>
 
         <div className="lg:pl-72 grow  overflow-scroll  flex flex-col ">
-          <div className="sticky top-0 z-40 flex h-16 shrink-0 items-center gap-x-4 border-b border-gray-200 bg-white px-4 shadow-sm sm:gap-x-6 sm:px-6 lg:px-8">
+          <div className="sticky top-0 z-40 flex h-16 shrink-0 items-center gap-x-4 border-b border bg-background px-4 shadow-sm sm:gap-x-6 sm:px-6 lg:px-8">
             <button
               type="button"
               className="-m-2.5 p-2.5 text-gray-700 lg:hidden"
@@ -323,7 +323,7 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
                   />
                   <input
                     id="search-field"
-                    className=" hidden sm:block  grow  h-11 w-full border-0 py-0 pl-8 pr-0 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm"
+                    className=" hidden sm:block  grow  bg-background h-11 w-full border-0 py-0 pl-8 pr-0 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm"
                     placeholder="Search..."
                     type="search"
                     name="search"
@@ -341,7 +341,7 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
 
                 {/* Separator */}
                 <div
-                  className="hidden lg:block lg:h-6 lg:w-px lg:bg-gray-900/10"
+                  className="hidden lg:block lg:h-6 lg:w-px lg:bg-muted"
                   aria-hidden="true"
                 />
 
@@ -356,7 +356,7 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
                     />
                     <span className="hidden lg:flex lg:items-center">
                       <span
-                        className="ml-4 text-sm font-semibold leading-6 text-gray-900"
+                        className="ml-4 text-sm font-semibold leading-6"
                         aria-hidden="true"
                       >
                         Tom Cook
